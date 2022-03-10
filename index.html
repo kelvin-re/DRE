@@ -378,16 +378,83 @@
                                     </div>
                                   </div>
 
-                                  <div class="col-sm-6 col-lg-3">
-                                    <div class="card">
-                                      
+                                  <div class="col-md-6 col-xl-3">
+                                    <div class="card card-sm">
+                                      <div class="card-body">
+                                        <div class="row align-items-center">
+                                          <div class="col-auto">
+                                            <div class="chart-sparkline chart-sparkline-square" id="sparkline-sales"></div>
+                                          </div>
+                                          <div class="col">
+                                            <div class="font-weight-medium">
+                                              132 
+                                            </div>
+                                            <div class="text-muted">
+                                              12 waiting payments
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
-                                  <div class="col-sm-6 col-lg-3">
-                                    <div class="card">
-                                      
+                                  <div class="col-md-6 col-xl-3">
+                                    <div class="card card-sm">
+                                      <div class="card-body">
+                                        <div class="row align-items-center">
+                                          <div class="col-auto">
+                                            <div class="chart-sparkline chart-sparkline-square" id="sparkline-orders"></div>
+                                          </div>
+                                          <div class="col">
+                                            <div class="font-weight-medium">
+                                              PA:
+                                            </div>
+                                            <div class="text-muted">
+                                              32 shipped
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
+                                  <div class="col-md-6 col-xl-3">
+                                    <div class="card card-sm">
+                                      <div class="card-body">
+                                        <div class="row align-items-center">
+                                          <div class="col-auto">
+                                            <div class="chart-sparkline chart-sparkline-square" id="sparkline-members"></div>
+                                          </div>
+                                          <div class="col">
+                                            <div class="font-weight-medium">
+                                              1352 Members
+                                            </div>
+                                            <div class="text-muted">
+                                              163 registered today
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 col-xl-3">
+                                    <div class="card card-sm">
+                                      <div class="card-body">
+                                        <div class="row align-items-center">
+                                          <div class="col-auto">
+                                            <div class="chart-sparkline chart-sparkline-square" id="sparkline-comments"></div>
+                                          </div>
+                                          <div class="col">
+                                            <div class="font-weight-medium">
+                                              132 Comments
+                                            </div>
+                                            <div class="text-muted">
+                                              16 waitings
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
                                   <div class="col-sm-6 col-lg-3">
                                     <div class="card">
                                       <div class="card-body">
@@ -434,7 +501,7 @@
                                           </div>
                                         </div>
                                         <div class="d-flex align-items-baseline">
-                                          <div class="h1 mb-0 me-2">$ 60.285,96</div>
+                                          <div class="h1 mb-0 me-2">R$ 60.285,96</div>
                                           <div class="me-auto">
                                             <span class="text-green d-inline-flex align-items-center lh-1">
                                               100% <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
@@ -442,13 +509,10 @@
                                             </span>
                                           </div>
                                         </div>
-                                        <div id="chart-revenue-bg" class="chart-sm">
-                                          
-                                        </div>
                                       </div>
+                                      <div id="chart-revenue-bg" class="chart-sm"></div>
                                     </div>
                                   </div>
-                                  
                                     <div>
                                       <div class="card">
                                         <div class="card-table table-responsive">
@@ -616,14 +680,15 @@
                         flex-column flex-sm-row
                       "
                     >
-                      <span class="mb-5 mb-sm-0"
-                        ><a href="https://technine.com.br"
-                          ><img
+                      <span class="mb-5 mb-sm-0">
+                        <a href="https://technine.com.br">
+                        <img
                             src="https://portal.amavia.technine.com.br/images/portal/logo_horizontal.png"
                             height="35"
                             alt="Portal do Franqueado"
-                            title="Portal do Franqueado" /></a
-                      ></span>
+                            title="Portal do Franqueado" />
+                        </a>
+                      </span>
                       <span class="mb-5 mb-sm-0"
                         ><a href="https://technine.com.br"
                           ><img
@@ -637,7 +702,8 @@
               </footer>
           </div>
           <script src="https://unpkg.com/@tabler/core@latest/dist/js/tabler.min.js"></script>
-
+            <!-- Libs JS -->
+          <script src="./dist/apexcharts.min.js"></script>
           <script>
             // @formatter:off
             document.addEventListener("DOMContentLoaded", function () {
@@ -762,6 +828,161 @@
             });
             // @formatter:on
           </script>
-
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-sales'), {
+                chart: {
+                  type: "radialBar",
+                  fontFamily: 'inherit',
+                  height: 40,
+                  width: 40,
+                  animations: {
+                    enabled: false
+                  },
+                  sparkline: {
+                    enabled: true
+                  },
+                },
+                tooltip: {
+                  enabled: false,
+                },
+                plotOptions: {
+                  radialBar: {
+                    hollow: {
+                      margin: 0,
+                      size: '75%'
+                    },
+                    track: {
+                      margin: 0
+                    },
+                    dataLabels: {
+                      show: false
+                    }
+                  }
+                },
+                colors: ["#206bc4"],
+                series: [56],
+              })).render();
+            });
+            // @formatter:on
+          </script>
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-orders'), {
+                chart: {
+                  type: "radialBar",
+                  fontFamily: 'inherit',
+                  height: 40,
+                  width: 40,
+                  animations: {
+                    enabled: false
+                  },
+                  sparkline: {
+                    enabled: true
+                  },
+                },
+                tooltip: {
+                  enabled: false,
+                },
+                plotOptions: {
+                  radialBar: {
+                    hollow: {
+                      margin: 0,
+                      size: '75%'
+                    },
+                    track: {
+                      margin: 0
+                    },
+                    dataLabels: {
+                      show: false
+                    }
+                  }
+                },
+                colors: ["#5eba00"],
+                series: [56],
+              })).render();
+            });
+            // @formatter:on
+          </script>
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-members'), {
+                chart: {
+                  type: "radialBar",
+                  fontFamily: 'inherit',
+                  height: 40,
+                  width: 40,
+                  animations: {
+                    enabled: false
+                  },
+                  sparkline: {
+                    enabled: true
+                  },
+                },
+                tooltip: {
+                  enabled: false,
+                },
+                plotOptions: {
+                  radialBar: {
+                    hollow: {
+                      margin: 0,
+                      size: '75%'
+                    },
+                    track: {
+                      margin: 0
+                    },
+                    dataLabels: {
+                      show: false
+                    }
+                  }
+                },
+                colors: ["#cd201f"],
+                series: [56],
+              })).render();
+            });
+            // @formatter:on
+          </script>
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-comments'), {
+                chart: {
+                  type: "radialBar",
+                  fontFamily: 'inherit',
+                  height: 40,
+                  width: 40,
+                  animations: {
+                    enabled: false
+                  },
+                  sparkline: {
+                    enabled: true
+                  },
+                },
+                tooltip: {
+                  enabled: false,
+                },
+                plotOptions: {
+                  radialBar: {
+                    hollow: {
+                      margin: 0,
+                      size: '75%'
+                    },
+                    track: {
+                      margin: 0
+                    },
+                    dataLabels: {
+                      show: false
+                    }
+                  }
+                },
+                colors: ["#fab005"],
+                series: [56],
+              })).render();
+            });
+            // @formatter:on
+          </script>
     </body>
 </html>
