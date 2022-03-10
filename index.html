@@ -370,10 +370,7 @@
                                     <h3 class="card-title">Demonstração de resultados</h3>
                                     <p class="card-p">Periodo: 01/02/2022 - 28/02/2022</p>
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                      <!-- <button class="btn btn-warning me-md-2" type="button"><i class="fa fa-print"></i
-                                        >IMPRIMIR DRE</button> -->
-                                      
-                                      <button class="btn" type="button"><i class="fa fa-filter"></i
+                                      <button class="btn btn-outline-secondary" type="button"><i class="fa fa-filter"></i
                                         >FILTROS</button>
                                     </div>
                                   </div>
@@ -387,10 +384,10 @@
                                           </div>
                                           <div class="col">
                                             <div class="font-weight-medium">
-                                              132 
+                                              T.M.:
                                             </div>
                                             <div class="text-muted">
-                                              12 waiting payments
+                                              19,36
                                             </div>
                                           </div>
                                         </div>
@@ -406,10 +403,10 @@
                                           </div>
                                           <div class="col">
                                             <div class="font-weight-medium">
-                                              PA:
+                                              C.A.:
                                             </div>
                                             <div class="text-muted">
-                                              32 shipped
+                                              27,50%
                                             </div>
                                           </div>
                                         </div>
@@ -425,10 +422,10 @@
                                           </div>
                                           <div class="col">
                                             <div class="font-weight-medium">
-                                              1352 Members
+                                              Cupons.:
                                             </div>
                                             <div class="text-muted">
-                                              163 registered today
+                                              82.252
                                             </div>
                                           </div>
                                         </div>
@@ -444,10 +441,10 @@
                                           </div>
                                           <div class="col">
                                             <div class="font-weight-medium">
-                                              132 Comments
+                                              Pessoas.:
                                             </div>
                                             <div class="text-muted">
-                                              16 waitings
+                                              82.252
                                             </div>
                                           </div>
                                         </div>
@@ -455,7 +452,7 @@
                                     </div>
                                   </div>
                                   
-                                  <div class="col-sm-6 col-lg-3">
+                                  <div class="col-md-6 d-grid gap-2 d-md-flex justify-content-md-center">
                                     <div class="card">
                                       <div class="card-body">
                                         <div class="d-flex align-items-center">
@@ -484,7 +481,7 @@
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-sm-6 col-lg-3">
+                                  <div class="col-md-6 d-grid gap-2 d-md-flex justify-content-md-center">
                                     <div class="card">
                                       <div class="card-body">
                                         <div class="d-flex align-items-center">
@@ -522,33 +519,360 @@
                                                   <th scope="col">Descrição</th>
                                                   <th scope="col">R$</th>
                                                   <th scope="col">%</th>
-                                                  <th scope="col">&nbsp;</th>
+                                                  <th>&nbsp;</th>
+                                                  <th>&nbsp;</th>
+                                                  <th scope="col">
+                                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                      <button class="btn btn-outline-secondary me-md-2" type="button"><i class="fa fa-print"></i
+                                                      >IMPRIMIR DRE</button>
+                                                    </div>
+                                                  </th>
                                                 </tr>
                                               </thead>
                                               <tbody>
-                                                <tr>
+                                                <tr data-bs-toggle="collapse" 
+                                                href=".collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample" class="tr">
                                                   <th scope="row">
-                                                    Receita Total com Vendas
+                                                    Receita Total com Vendas<img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" class="maismenos">
                                                   </th>
                                                   <td>R$ 60.285,96</td>
                                                   <td>100,0%</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
                                                   <td>
                                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                                         <button class="btn btn-warning me-md-2 " type="button"><i class="fa fa-edit"></i
                                                           >EDITAR</button>
                                                         
-                                                        <button class="btn btn-info" type="button"><i class="fa fa-edit"></i
+                                                        <button class="btn btn-info" type="button"><i class="fa fa-check"></i
                                                           >AUDITAR</button>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td colspan="6">
+                                                    <div class="card-table table-responsive">
+                                                      <table class="table table-vcenter">
+                                                        <thead>
+                                                          <tr class="collapse collapseExample1">
+                                                            <th colspan="2" scope="col">PRODUTO</th>
+                                                            <th scope="col">QNTD.1</th>
+                                                            <th scope="col">X</th>
+                                                            <th scope="col">PREÇO DE VENDA UNITÁRIO MÉDIO</th>
+                                                            <th>=</th>
+                                                            <th>FATURAMENTO TOTAL ESTIMADO MÉDIO</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>1</td>
+                                                            <td>ÁGUA 500 ML</td>
+                                                            <td>24</td>
+                                                            <td>x</td>
+                                                            <td>R$ 4,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 97,44</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>2</td>
+                                                            <td>BABYCHURROS COM 10</td>
+                                                            <td>140</td>
+                                                            <td>x</td>
+                                                            <td>R$ 8,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 1.122,24</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>3</td>
+                                                            <td>BABYCHURROS COM 30</td>
+                                                            <td>21</td>
+                                                            <td>x</td>
+                                                            <td>R$ 25,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 525,00</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>4</td>
+                                                            <td>BABYCHURROS COM 6</td>
+                                                            <td>2</td>
+                                                            <td>x</td>
+                                                            <td>R$ 7,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 11,76</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>5</td>
+                                                            <td>CHURRITOS</td>
+                                                            <td>129</td>
+                                                            <td>x</td>
+                                                            <td>R$ 8,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 1.034,88</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>6</td>
+                                                            <td>CINQUENTINHA</td>
+                                                            <td>1284</td>
+                                                            <td>x</td>
+                                                            <td>R$ 15,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 19.252,80</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>7</td>
+                                                            <td>COMBO 3X1</td>
+                                                            <td>192</td>
+                                                            <td>x</td>
+                                                            <td>R$ 15,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 2.872,80</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>8</td>
+                                                            <td>COMBO CINQUENTINHA</td>
+                                                            <td>338</td>
+                                                            <td>x</td>
+                                                            <td>R$ 20,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 6.753,60</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>9</td>
+                                                            <td>COMBO POP100</td>
+                                                            <td>102</td>
+                                                            <td>x</td>
+                                                            <td>R$ 35,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 3.586,80</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>10</td>
+                                                            <td>CONE 20</td>
+                                                            <td>270</td>
+                                                            <td>x</td>
+                                                            <td>R$ 9,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 2.426,76</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>11</td>
+                                                            <td>DELIVERY BABYCHURROS COM 10</td>
+                                                            <td>22</td>
+                                                            <td>x</td>
+                                                            <td>R$ 10,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 218,40</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>12</td>
+                                                            <td>DELIVERY BABYCHURROS COM 30</td>
+                                                            <td>6</td>
+                                                            <td>x</td>
+                                                            <td>R$ 30,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 176,40</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>13</td>
+                                                            <td>DELIVERY BOX CHURRITOS</td>
+                                                            <td>8</td>
+                                                            <td>x</td>
+                                                            <td>R$ 25,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 189,00</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>14</td>
+                                                            <td>DELIVERY CHURRITOS</td>
+                                                            <td>9</td>
+                                                            <td>x</td>
+                                                            <td>R$ 10,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 92,40</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>15</td>
+                                                            <td>DELIVERY CINQUENTINHA</td>
+                                                            <td>68</td>
+                                                            <td>x</td>
+                                                            <td>R$ 18,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 1.224,72</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>16</td>
+                                                            <td>DELIVERY COMBO 3X1</td>
+                                                            <td>8</td>
+                                                            <td>x</td>
+                                                            <td>R$ 18,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 136,08</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>17</td>
+                                                            <td>DELIVERY COMBO CINQUENTINHA</td>
+                                                            <td>31</td>
+                                                            <td>x</td>
+                                                            <td>R$ 25,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 777,00</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>18</td>
+                                                            <td>DELIVERY COMBO POP100</td>
+                                                            <td>25</td>
+                                                            <td>x</td>
+                                                            <td>R$ 40,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 1.008,00</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>19</td>
+                                                            <td>DELIVERY KIBE 10</td>
+                                                            <td>9</td>
+                                                            <td>x</td>
+                                                            <td>R$ 10,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 92,40</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>20</td>
+                                                            <td>DELIVERY KIBE 30</td>
+                                                            <td>3</td>
+                                                            <td>x</td>
+                                                            <td>R$ 28,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 94,08</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>21</td>
+                                                            <td>DELIVERY MCDM</td>
+                                                            <td>30</td>
+                                                            <td>x</td>
+                                                            <td>R$ 30,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 907,20</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>22</td>
+                                                            <td>DELIVERY POP FAMÍLIA</td>
+                                                            <td>7</td>
+                                                            <td>x</td>
+                                                            <td>R$ 75,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 504,00</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>23</td>
+                                                            <td>DELIVERY POP100</td>
+                                                            <td>80</td>
+                                                            <td>x</td>
+                                                            <td>R$ 34,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 2.713,20</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>24</td>
+                                                            <td>KIBE COM 10</td>
+                                                            <td>132</td>
+                                                            <td>x</td>
+                                                            <td>R$ 8,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 1.055,04</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>25</td>
+                                                            <td>KIBE COM 30</td>
+                                                            <td>4</td>
+                                                            <td>x</td>
+                                                            <td>R$ 23,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 96,60</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>26</td>
+                                                            <td>BABYCHURROS COM 10</td>
+                                                            <td>140</td>
+                                                            <td>x</td>
+                                                            <td>R$ 8,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 1.122,24</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>2</td>
+                                                            <td>LOUCOMBO</td>
+                                                            <td>279</td>
+                                                            <td>x</td>
+                                                            <td>R$ 11,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 3.067,68</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>27</td>
+                                                            <td>MCDM</td>
+                                                            <td>108</td>
+                                                            <td>x</td>
+                                                            <td>R$ 25,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 2.709,00</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>28</td>
+                                                            <td>MOLHO EXTRA</td>
+                                                            <td>155</td>
+                                                            <td>x</td>
+                                                            <td>R$ 2,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 309,12</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>29</td>
+                                                            <td>POP100</td>
+                                                            <td>210</td>
+                                                            <td>x</td>
+                                                            <td>R$ 28,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 5.880,00</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>30</td>
+                                                            <td>REFRI 237 ML</td>
+                                                            <td>333</td>
+                                                            <td>x</td>
+                                                            <td>R$ 4,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 1.330,56</td>
+                                                          </tr>
+                                                          <tr class="collapse collapseExample1">
+                                                            <td>31</td>
+                                                            <td>REFRI LATA 350 ML</td>
+                                                            <td>4</td>
+                                                            <td>x</td>
+                                                            <td>R$ 5,00</td>
+                                                            <td>=</td>
+                                                            <td>R$ 21,00</td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
                                                     </div>
                                                   </td>
                                                 </tr>
                                                 <tr data-bs-toggle="collapse" 
                                                 href=".collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="tr">
-                                                  <th
-                                                  colspan="4">
+                                                  <th>
                                                   Custos Variáveis totais<img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" class="maismenos">
                                                   </th>
-                                                  
+                                                  <td>R$ 50.484,99</td>
+                                                  <td>90,7%</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td><div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                    <button class="btn btn-warning me-md-2 " type="button"><i class="fa fa-edit"></i
+                                                      >EDITAR</button>
+                                                    
+                                                    <button class="btn btn-info" type="button"><i class="fa fa-check"></i
+                                                      >AUDITAR</button>
+                                                  </div></td>
                                                 </tr>
                                                 <tr class="collapse collapseExample">
                                                   <td>
@@ -556,12 +880,14 @@
                                                   </td>
                                                   <td>R$ 23.922,01</td>
                                                   <td>39,7%</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
                                                   <td>
                                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                                       <button class="btn btn-warning me-md-2 " type="button"><i class="fa fa-edit"></i
                                                         >EDITAR</button>
                                                       
-                                                      <button class="btn btn-info" type="button"><i class="fa fa-edit"></i
+                                                      <button class="btn btn-info" type="button"><i class="fa fa-check"></i
                                                         >AUDITAR</button>
                                                     </div>
                                                   </td>
@@ -572,12 +898,14 @@
                                                   </td>
                                                   <td>R$ 5.828,19</td>
                                                   <td>9,7%</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
                                                   <td>
                                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                                       <button class="btn btn-warning me-md-2 " type="button"><i class="fa fa-edit"></i
                                                         >EDITAR</button>
                                                       
-                                                      <button class="btn btn-info" type="button"><i class="fa fa-edit"></i
+                                                      <button class="btn btn-info" type="button"><i class="fa fa-check"></i
                                                         >AUDITAR</button>
                                                     </div>
                                                   </td>
@@ -588,12 +916,14 @@
                                                   </td>
                                                   <td>R$ 2.042,43</td>
                                                   <td>3,4%</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
                                                   <td>
                                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                                       <button class="btn btn-warning me-md-2 " type="button"><i class="fa fa-edit"></i
                                                         >EDITAR</button>
                                                       
-                                                      <button class="btn btn-info" type="button"><i class="fa fa-edit"></i
+                                                      <button class="btn btn-info" type="button"><i class="fa fa-check"></i
                                                         >AUDITAR</button>
                                                     </div>
                                                   </td>
@@ -604,12 +934,14 @@
                                                   </th>
                                                   <td class="text-red">R$ 31.792,63</td>
                                                   <td>52,7%</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
                                                   <td>
                                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                                       <button class="btn btn-warning me-md-2 " type="button"><i class="fa fa-edit"></i
                                                         >EDITAR</button>
                                                       
-                                                      <button class="btn btn-info" type="button"><i class="fa fa-edit"></i
+                                                      <button class="btn btn-info" type="button"><i class="fa fa-check"></i
                                                         >AUDITAR</button>
                                                     </div>
                                                   </td>
@@ -620,12 +952,14 @@
                                                   <th>Margem de contribuição<img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" class="maismenos"></th>
                                                   <td>R$ 28.493,33</td>
                                                   <td>47,3%</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
                                                   <td>
                                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                                       <button class="btn btn-warning me-md-2 " type="button"><i class="fa fa-edit"></i
                                                         >EDITAR</button>
                                                       
-                                                      <button class="btn btn-info" type="button"><i class="fa fa-edit"></i
+                                                      <button class="btn btn-info" type="button"><i class="fa fa-check"></i
                                                         >AUDITAR</button>
                                                     </div>
                                                   </td>
@@ -634,12 +968,14 @@
                                                   <td>(-) Custos Fixos Totais</td>
                                                   <td>R$ 18.692,36</td>
                                                   <td>31,0%</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
                                                   <td>
                                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                                       <button class="btn btn-warning me-md-2 " type="button"><i class="fa fa-edit"></i
                                                         >EDITAR</button>
                                                       
-                                                      <button class="btn btn-info" type="button"><i class="fa fa-edit"></i
+                                                      <button class="btn btn-info" type="button"><i class="fa fa-check"></i
                                                         >AUDITAR</button>
                                                     </div>
                                                   </td>
@@ -648,12 +984,14 @@
                                                   <td>Resutado Operacional</td>
                                                   <td class="text-green">R$ 9.800,97</td>
                                                   <td>16,3%</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
                                                   <td>
                                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                                       <button class="btn btn-warning me-md-2 " type="button"><i class="fa fa-edit"></i
                                                         >EDITAR</button>
                                                       
-                                                      <button class="btn btn-info" type="button"><i class="fa fa-edit"></i
+                                                      <button class="btn btn-info" type="button"><i class="fa fa-check"></i
                                                         >AUDITAR</button>
                                                     </div>
                                                   </td>
